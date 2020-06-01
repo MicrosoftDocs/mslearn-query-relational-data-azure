@@ -12,10 +12,10 @@ CREATE TABLE CustomerOrder (
     InventoryId int FOREIGN KEY REFERENCES Inventory(Id)
 );
 
-INSERT INTO Inventory (Id, Name, Quantity) VALUES (1, 'banana', 150); 
-INSERT INTO Inventory (Id, Name, Quantity) VALUES (2, 'orange', 154);
-INSERT INTO Inventory (Id, Name, Quantity) VALUES (3, 'apple', 23); 
-INSERT INTO Inventory (Id, Name, Quantity) VALUES (4, 'lemon', 254);
+INSERT INTO Inventory (Id, Name, Stock) VALUES (1, 'banana', 150); 
+INSERT INTO Inventory (Id, Name, Stock) VALUES (2, 'orange', 154);
+INSERT INTO Inventory (Id, Name, Stock) VALUES (3, 'apple', 23); 
+INSERT INTO Inventory (Id, Name, Stock) VALUES (4, 'lemon', 254);
 
 
 INSERT INTO CustomerOrder(Id, CustomerName, InventoryId, Quantity, Created) VALUES (1, 'John Smith', 2, 5, getdate());
